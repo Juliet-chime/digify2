@@ -1,0 +1,263 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.cover{
+    width: 100%;
+    height: 100vmax;
+    background-color:rgba(255,255,255,0.7);
+    position: absolute;
+    display: none;
+   }
+
+.cover-nav{
+    width: 40%;
+    margin:auto;
+    margin-top: 500px;
+}
+
+.cover-nav a{
+    color: black;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+}
+
+
+.cover-nav a:hover{
+    color: rgb(138, 138, 19);
+}
+
+.cover-nav i{
+    color: black;
+    padding-left: 260px;
+}
+
+body {
+    background: #f5f5f5;
+}
+
+.container {
+    width: 100%;
+    border: 5px solid #ffdb3a;
+    overflow: auto;
+}
+
+.head {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: solid rgb(182, 179, 179);
+    align-items: center;
+    height: 50px;
+}
+
+.text {
+    width: 80%;
+    margin: auto;
+    margin-top: 70px;
+    overflow: auto;
+}
+
+.text-left {
+    width: 65%;
+    float: left;
+}
+
+.text-left li {
+    list-style-type: none;
+    border-bottom: solid rgb(182, 179, 179);
+    padding-bottom: 30px;
+    line-height: 1.6;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: lighter;
+    
+}
+
+.text-left h2 {
+    padding-top: 10px;
+}
+
+.text-left p {
+    padding-top: 10px;
+}
+
+.text-right {
+    width: 27%;
+    float: right;
+}
+
+.text-right li {
+    list-style: none;
+    border: solid rgb(182, 179, 179);
+    width: 100%;
+    height: 190px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
+
+.right1 a {
+    background-color: #1b95e0;
+    color: white;
+    padding: 1.5px;
+    border-radius: 3px;
+    font-size: 12px;
+}
+/* .right1 p {
+    border:solid black;
+} */
+
+.image a {
+    padding-left: 70px;
+    padding-top: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.image img {
+    padding-top: 10px;
+}
+
+.nostyle i {
+    padding-left: 20px;
+}
+
+.nostyle a {
+    color: black;
+}
+
+.nav{
+    border: solid rgb(255, 255, 255);
+    width: 50%;
+    margin-left: 130px;
+    position: relative;
+    background-color: white;
+    margin-top: 20px;
+
+}
+
+.nav-text{
+    /* border: solid red; */
+    position: relative;
+    z-index: 0;
+  }
+
+.nav img{
+    position: absolute;
+    bottom: 1px; 
+    /* top: 20px; */
+    right: 40px;
+    z-index: 0;
+
+}
+
+.nav-text h2{
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.nav-text p{
+    padding-top: 10px;
+    padding-left: 20px;
+    line-height: 1.5;
+}
+
+.nav-button{
+    /* border: solid black; */
+    position: relative;
+    /* bottom: 200px; */
+    width: 100%;
+    z-index: 1;
+
+}
+
+input{
+   height: 40px;
+   margin-left: 20px;
+   background: #e6e6e6;;
+   padding-left: 10px;
+   border:solid #e6e6e6;;
+   border-radius: 3px;
+   margin-top:20px;
+   margin-bottom: 20px;
+}
+
+button{
+    height: 40px;
+    width: 80px;
+    background: #ffdb3a;
+    border:  #ffdb3a;;
+}
+
+ .before-last{
+     padding-top: 20px;
+ }
+
+ .before-last a{
+     padding-left: 130px;
+     color: black;
+     text-decoration: none;
+     
+ }
+.last{
+    border-top:solid rgb(165, 162, 162);
+    margin-top: 100px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.last a{
+    text-decoration: none;
+    padding-left: 15px;
+    color: black;
+}
+
+
+@media screen and (max-width:1000px){
+    .text {
+    width: 100%;
+    margin: auto;
+    margin-top: 70px;
+    overflow: auto;
+}
+
+.text-left {
+    width: 100%;
+}
+
+.text-right {
+    width: 100%;
+}
+
+.nav{
+    width: 100%;
+    margin:0px;
+
+}
+
+.before-last{
+    width: 100%;
+     padding-top: 20px;
+     padding-left: 0px;
+     
+ }
+
+.nav img{
+    bottom: 1px; 
+    right: 0px;
+}
+
+.nav-text p{
+    padding-left: 10px;
+}
+
+.nav-button{
+    width: 90%;
+}
+
+} 

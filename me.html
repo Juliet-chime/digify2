@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f5f5f5;
+
+        }
+
+        .head {
+            height: 60px;
+            border-bottom: solid rgb(182, 179, 179);
+        }
+
+        .contain {
+            width: 100%;
+            border: 5px solid #ffdb3a;
+            overflow: auto;
+
+
+        }
+
+        .main {
+            width: 80%;
+            margin: auto;
+            margin-top: 100px;
+        
+        }
+
+        .left {
+            width: 70%;
+            float: left;
+        }
+
+        .left li {
+            list-style: none;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            border: solid #e6e6e6;
+            ;
+            border-right: none;
+            border-top: none;
+            border-left: none;
+
+        }
+
+        /* .left hr{
+            color: #e6e6e6;
+            height: 2px;
+        } */
+
+        .right {
+            width: 25%;
+            float: right;
+        }
+
+        .right li {
+            width: 100%;
+            height: 190px;
+            border: solid rgb(155, 155, 155);
+            margin-bottom: 20px;
+            list-style: none;
+        }
+
+        @media screen and (max-width:1000px) {
+            .main {
+                width: 100%;
+                margin: auto;
+                margin-top: 100px;
+            }
+
+            .left {
+                width: 100%;
+            }
+
+            .right {
+                width: 100%;
+            }
+        }
+
+        .cover{
+            width: 100%;
+            height: 100vmax;
+            background-color: rgba(255, 255, 255, 0.9);
+            position: absolute;
+            display: none;
+        
+        }
+        .cover a{
+            display: block;
+            color: black;
+            font-size: 40px;
+            text-decoration: none;
+        }
+        #menu{
+            width: 400px;
+            margin: auto;
+            text-align: center;
+            margin-top: 200px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="cover">
+        <div id="menu">
+            <div id="close" style="width: 20px; height: 20px; background-color: green; cursor: pointer; margin-left: 20px; margin-top: 20px; margin: auto;"></div>
+
+            <a href="">HOME</a>
+            <a href="">ABOUT US</a>
+            <a href="">CONTACT ME</a>
+            <a href="">SOLUTION</a>
+
+        </div>
+    </div>
+    <div class="contain">
+        <div class="head">
+            <div id="click" style="width: 20px; height: 20px; background-color: red; cursor: pointer; margin-left: 20px; margin-top: 20px;"></div>
+        </div>
+        <div class="main">
+            <div class="left">
+                <ul>
+                    <li>
+                        <h2>Highlights from Chrome Dev Summit 2020</h2>
+                        <p>Dec 14, 2020 <small><i>conference</i></small></p>
+                        <p>CDS in 2020 was a bit different, like everything else. It was online, and the
+                            talks were more bite-sized at roughly 10 minutes each. I really enjoyed this new style of
+                            the summit and, while
+                            I missed the in-person aspects of the conference, this was a great way to end...</p>
+                    </li>
+
+                    <li>
+                        <h2>Highlights from Chrome Dev Summit 2020</h2>
+                        <p>Dec 14, 2020 <small><i>conference</i></small></p>
+                        <p>CDS in 2020 was a bit different, like everything else. It was online, and the
+                            talks were more bite-sized at roughly 10 minutes each. I really enjoyed this new style of
+                            the summit and, while
+                            I missed the in-person aspects of the conference, this was a great way to end...</p>
+                    </li>
+
+                    <li>
+                        <h2>Highlights from Chrome Dev Summit 2020</h2>
+                        <p>Dec 14, 2020 <small><i>conference</i></small></p>
+                        <p>CDS in 2020 was a bit different, like everything else. It was online, and the
+                            talks were more bite-sized at roughly 10 minutes each. I really enjoyed this new style of
+                            the summit and, while
+                            I missed the in-person aspects of the conference, this was a great way to end...</p>
+                    </li>
+
+                    <li>
+                        <h2>Highlights from Chrome Dev Summit 2020</h2>
+                        <p>Dec 14, 2020 <small><i>conference</i></small></p>
+                        <p>CDS in 2020 was a bit different, like everything else. It was online, and the
+                            talks were more bite-sized at roughly 10 minutes each. I really enjoyed this new style of
+                            the summit and, while
+                            I missed the in-person aspects of the conference, this was a great way to end...</p>
+                    </li>
+                    <hr>
+                    <li>
+                        <h2>Highlights from Chrome Dev Summit 2020</h2>
+                        <p>Dec 14, 2020 <small><i>conference</i></small></p>
+                        <p>CDS in 2020 was a bit different, like everything else. It was online, and the
+                            talks were more bite-sized at roughly 10 minutes each. I really enjoyed this new style of
+                            the summit and, while
+                            I missed the in-person aspects of the conference, this was a great way to end...</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="right">
+                <ul>
+                    <li>bitsofcode. Articles on frontend development and more.
+
+                        All articles are written by Ire Aderinokun, frontend developer and user interface designer.</li>
+
+                    <li>bitsofcode. Articles on frontend development and more.
+
+                        All articles are written by Ire Aderinokun, frontend developer and user interface designer.</li>
+
+                </ul>
+
+            </div>
+        </div>
+    </div>
+    <script>
+
+        let btn = document.getElementById('click');
+        let cover = document.querySelector('.cover');
+        let close = document.getElementById('close');
+
+
+
+        btn.addEventListener('click', showCover);
+        function showCover() {
+            cover.style.display = 'block';
+        }
+
+        close.addEventListener('click', closeCover);
+        function closeCover() {
+            cover.style.display = 'none';
+        }
+
+    </script>
+</body>
+
+</html>
